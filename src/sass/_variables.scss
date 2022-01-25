@@ -1,0 +1,17 @@
+$indigo: #3730a3;
+$white: #ffffff;
+$whitesmoke: #eeebff;
+$gray: #6b7280;
+$black: #1f2937;
+$redispink: #b4a6a2;
+
+//for responsive desing
+$breakpoints: (
+  "xs": 0px,
+  "sm": 480px,
+  "md": 720px,
+  "lg": 960px,
+  "xl": 1200px,
+);
+
+$grid-columns: 12;

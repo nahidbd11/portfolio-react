@@ -1,0 +1,47 @@
+@import "./functions";
+@import "./variables";
+@import "./mixins";
+
+//reseting layout
+@import "./reset";
+//adding media query and grid
+@import "./grid";
+
+//components
+@import "./component/navbar";
+@import "./component/menu";
+@import "./component/intro";
+@import "./component/slider";
+@import "./component/about";
+@import "./component/skills";
+@import "./component/contact";
+
+.sections {
+  height: calc(100vh - 70px);
+  position: relative;
+  top: 70px;
+  scroll-snap-type: y mandatory;
+  overflow-y: scroll;
+  scroll-behavior: smooth;
+
+  // & div:nth-of-type(2n) {
+  //   background-color: yellow;
+  // }
+  // & div:nth-of-type(2n + 1) {
+  //   background-color: rgb(98, 145, 206);
+  // }
+  & > * {
+    height: calc(100vh - 70px);
+    scroll-snap-align: start;
+  }
+}
+
+.scroll-anim {
+  opacity: 0;
+  transform: translateY(-10%);
+  transition: all 0.8s ease-in-out 0.25s;
+  &.active {
+    opacity: 1;
+    transform: translateY(0%);
+  }
+}

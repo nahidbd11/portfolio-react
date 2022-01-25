@@ -1,0 +1,55 @@
+.intro {
+  .left {
+    padding: 2rem;
+    padding-top: 80px;
+    padding-left: 10rem;
+    line-height: 3.5rem;
+    h1 {
+      font-size: 60px;
+    }
+    h2 {
+      font-size: 30px;
+    }
+    h3 {
+      font-size: 20px;
+      span {
+        color: red;
+      }
+      .ityped-cursor {
+        font-size: 1.5rem;
+        opacity: 1;
+        animation: blink 0.5s infinite;
+      }
+      @keyframes blink {
+        50% {
+          opacity: 1;
+        }
+        100% {
+          opacity: 0;
+        }
+      }
+    }
+  }
+
+  .right {
+    .shape {
+      background-color: crimson;
+      position: absolute;
+      top: 0px;
+      right: 0px;
+      height: 590px;
+      width: 700px;
+      //   clip-path: ellipse(40% 40% at 52% 50%);
+      clip-path: polygon(25% 0%, 100% 0%, 100% 100%, 25% 100%, 0% 50%);
+    }
+
+    img {
+      position: absolute;
+      top: 0px;
+      padding-right: 39px;
+      right: 150px;
+      height: 550px;
+      width: 400px;
+    }
+  }
+}
