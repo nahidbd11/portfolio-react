@@ -9,6 +9,7 @@ $skills: (
 .skill {
   background: url("/src/assets/stacked-waves-haikei.png") no-repeat;
   background-size: cover;
+  background-attachment: fixed;
   .skill-container {
     background-color: #f5f5f5;
     border-radius: 25px;

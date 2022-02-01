@@ -351,7 +351,7 @@ img {
   right: 0;
   left: 0;
   height: 70px;
-  z-index: 3;
+  z-index: 4;
   background-color: #ffffff;
   color: black;
   transition: all 1s ease-in-out;
@@ -616,6 +616,7 @@ img {
 .skill {
   background: url("/src/assets/stacked-waves-haikei.png") no-repeat;
   background-size: cover;
+  background-attachment: fixed;
 }
 .skill .skill-container {
   background-color: #f5f5f5;
@@ -811,6 +812,61 @@ img {
 .contact-container .right .form-wrapper button:hover {
   background-position: right;
   box-shadow: 0px 0px 4px 20px #646e6a inset;
+}
+
+.services {
+  background-color: #e6e0e0;
+}
+.services hr {
+  width: 20%;
+  position: relative;
+  left: 40%;
+  color: #00fa36;
+}
+.services h1 {
+  text-align: center;
+  padding-top: 1em;
+  color: #352b2b;
+  font-size: 2.5rem;
+}
+.services .row {
+  justify-content: center;
+  align-items: center;
+  margin-top: 2rem;
+}
+
+.card {
+  margin: 1em;
+  padding: 1rem;
+  background-color: #fff;
+  box-shadow: 0px 0px 4px 4px rgba(0, 0, 0, 0.2);
+}
+.card .card-title {
+  text-align: center;
+}
+.card .card-body {
+  position: relative;
+}
+.card .card-body img {
+  height: 200px;
+  width: 100%;
+  object-fit: cover;
+  transition: all 1s;
+}
+.card .card-body p {
+  position: absolute;
+  bottom: 0;
+  height: 0%;
+  overflow: hidden;
+  color: #1d365c;
+  background-color: rgba(255, 255, 255, 0.6);
+  transition: all 1s;
+}
+.card:hover .card-body p {
+  height: 100%;
+}
+.card:hover .card-body img {
+  bottom: -67%;
 }
 
 .sections {

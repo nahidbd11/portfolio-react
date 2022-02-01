@@ -9,6 +9,7 @@ import Menu from "./components/Menu";
 import Slider from "./components/Slider";
 import Skills from "./components/Skills";
 import Contact from "./components/Contact";
+import Myservices from "./components/Myservices";
 
 function App() {
   const [open, setOpen] = useState(false);
@@ -49,6 +50,7 @@ function App() {
         <Slider />
         <Skills />
         <Contact />
+        <Myservices />
       </div>
     </div>
   );
